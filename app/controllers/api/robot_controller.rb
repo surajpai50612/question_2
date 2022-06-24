@@ -2,8 +2,8 @@ module Api
     class RobotController < ApplicationController
         def orders
             # Declaration
-            @x, @y, flag, @min = 0
-            @max, @direction = 4, ""
+            @x, @y, flag = 0
+            @min, @max, @direction = 0, 4, ""
 
             commands = params[:Commands]
 
